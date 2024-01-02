@@ -1,0 +1,29 @@
+{
+  "name": "markdown-docs",
+  "version": "1.0.0",
+  "description": "This Github Action will publish markdown documentations with file-based-routing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/achyutkneupane/Markdown-Docs.git"
+  },
+  "keywords": [
+    "github",
+    "action",
+    "markdown",
+    "documentation",
+    "automation",
+    "docs",
+    "cicd",
+    "ga"
+  ],
+  "author": "Achyut Neupane <achyutkneupane@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/achyutkneupane/Markdown-Docs/issues"
+  },
+  "homepage": "https://github.com/achyutkneupane/Markdown-Docs#readme"
+}
