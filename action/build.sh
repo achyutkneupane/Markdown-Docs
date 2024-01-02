@@ -19,13 +19,22 @@ done
 git checkout $BRANCH
 
 # create Qwik Instance
-npm create qwik@latest empty docs/$DIRECTORY
+npm create qwik@latest empty qwik
 
 # change directory
-cd docs/$DIRECTORY
+cd qwik
+
+# delete files
+rm -r src/routes/index.tsx src/routes/layout.tsx
 
 # install dependencies
 npm install
+
+# copy the docs files
+cp -r ../$DIRECTORY/* src/routes
+
+# Add static page integration
+npm run qwik add static --skipConfirmation=true
 
 # build
 npm run build

@@ -1,10 +1,11 @@
 name: Release version
+
 'on':
   push:
     branches:
       - master
 jobs:
-  build:
+  bump:
     name: Bump version
     runs-on: ubuntu-latest
     steps:
