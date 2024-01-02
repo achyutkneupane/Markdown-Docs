@@ -1,0 +1,26 @@
+name: "Documentation Generator"
+description: "Generates documentation for the project"
+author: "Achyut Neupane"
+
+inputs:
+  folder:
+    description: "The folder to generate documentation from"
+    required: true
+    default: "docs"
+  target:
+    description: "The target of the generated documentation instance (e.g. gh-pages, ssh, etc.)"
+    required: true
+    default: "gh-pages"
+  branch:
+    description: "The branch from which the documentation will be generated"
+    required: true
+    default: "master"
+
+outputs:
+  documentation:
+    value: ${{ steps.generate.outputs.documentation }}
+    description: "The link to the generated documentation"
+
+runs:
+  using: node20
+  main: action/index.js
